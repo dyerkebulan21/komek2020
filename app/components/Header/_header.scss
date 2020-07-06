@@ -1,0 +1,54 @@
+.header {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 248, 248, 1) 100%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(181, 116, 116, 1) 40%
+  );
+
+  .container {
+    height: 80px;
+    @include flex-space();
+  }
+
+  &-logo {
+    color: $colors-darkgreen;
+    &:hover {
+      cursor: pointer;
+      color: #fa5652;
+    }
+  }
+
+  &-menu {
+    list-style: none;
+    @include flex-row();
+
+    display: none;
+
+    @media (min-width: $middle) {
+      display: flex;
+    }
+
+    li {
+      margin-right: 20px;
+      color: $colors-darkgreen;
+      position: relative;
+
+      &:hover {
+        color: #fa5652;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          @include abs-center();
+          top: 150%;
+
+          @include block(5px);
+          border-radius: 50%;
+          background-color: #fa5652;
+        }
+      }
+    }
+  }
+}

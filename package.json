@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build && tsc --project tsconfig.server.json",
+    "start": "NODE_ENV=production node dist/index.js",
+    "lint": "tslint --fix -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,24 @@
   "bugs": {
     "url": "https://github.com/Papa-het/komek2020/issues"
   },
-  "homepage": "https://github.com/Papa-het/komek2020#readme"
+  "homepage": "https://github.com/Papa-het/komek2020#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.9"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^5.0.0",
+    "typescript": "^3.9.6"
+  }
 }

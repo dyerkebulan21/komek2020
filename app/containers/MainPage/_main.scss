@@ -1,0 +1,64 @@
+.topBlock {
+  position: relative;
+  min-height: 80vh;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(181, 116, 116, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 248, 248, 1) 10%
+  );
+
+  &-info {
+    position: absolute;
+    top: 15%;
+
+    @media (min-width: $middle) {
+      top: 40%;
+      width: 40%;
+    }
+
+    h1 {
+      color: $colors-darkgreen;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  &-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    display: none;
+
+    @media (min-width: $middle) {
+      display: block;
+    }
+  }
+}
+
+.cardsBlock {
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  .container {
+    @include flex-column-centered();
+    .card {
+      flex-basis: 28%;
+      margin-bottom: 20px;
+
+      @media (min-width: $middle) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: $middle) {
+      @include flex-space();
+    }
+  }
+}

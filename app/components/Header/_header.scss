@@ -13,10 +13,13 @@
   }
 
   &-logo {
-    color: $colors-darkgreen;
-    &:hover {
-      cursor: pointer;
-      color: $colors-light;
+    a {
+      color: $colors-darkgreen;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        color: $colors-light;
+      }
     }
   }
 
@@ -35,10 +38,13 @@
       color: $colors-darkgreen;
       position: relative;
 
-      &:hover {
+      a {
         color: $colors-light;
+        text-decoration: none;
         cursor: pointer;
+      }
 
+      &:hover {
         &::after {
           content: '';
           @include abs-center();

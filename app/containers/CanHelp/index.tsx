@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { FormBlock } from 'app/components/Form';
 
-const NeedHelp = () => {
+const CanHelp = () => {
   return (
     <div className="needHelp">
       <div className="needHelp-top asCard">
-        <h1 className="needHelp-title">Форма для тех, кому нужна помощь</h1>
+        <h1 className="needHelp-title">
+          Форма для тех, кто может чем-то помочь
+        </h1>
         <p className="needHelp-subtitle">
           Заполните форму максимально подробно и перепроверьте перед отправкой.
           <br />
@@ -15,10 +17,10 @@ const NeedHelp = () => {
       </div>
 
       <div className="needHelp-form asCard">
-        <FormBlock type="needHelp" />
+        <FormBlock type="canHelp" />
       </div>
     </div>
   );
 };
 
-export { NeedHelp };
+export { CanHelp };

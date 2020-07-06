@@ -1,15 +1,29 @@
-
 .needHelp {
-    &-title {
-      margin-top: 60px;
-      width: 650px;
-      margin-bottom: 20px;
-      font-size: 20px;
+  margin: auto;
+  max-width: 50rem;
+  padding: 20px 0 10px;
+
+  &-title {
+    padding: 40px 0 10px;
+  }
+
+  &-top {
+    margin-bottom: 40px;
+  }
+
+  &-form {
+    padding: 40px 20px;
+    &::before {
+      background: unset;
     }
-    .container{
-        width: 42rem;
-    }
-    &-input{
-        border-radius: 25px;
-    }
+  }
+
+  @media (min-width: $middle) {
+    margin: auto;
+    padding: 50px 0 40px;
+  }
+
+  .remark {
+    color: $colors-light;
+  }
 }

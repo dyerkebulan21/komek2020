@@ -1,0 +1,15 @@
+
+.needHelp {
+    &-title {
+      margin-top: 60px;
+      width: 650px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .container{
+        width: 42rem;
+    }
+    &-input{
+        border-radius: 25px;
+    }
+}

@@ -16,7 +16,7 @@
     color: $colors-darkgreen;
     &:hover {
       cursor: pointer;
-      color: #fa5652;
+      color: $colors-light;
     }
   }
 
@@ -36,7 +36,7 @@
       position: relative;
 
       &:hover {
-        color: #fa5652;
+        color: $colors-light;
         cursor: pointer;
 
         &::after {
@@ -46,7 +46,7 @@
 
           @include block(5px);
           border-radius: 50%;
-          background-color: #fa5652;
+          background-color: $colors-light;
         }
       }
     }

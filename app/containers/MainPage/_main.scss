@@ -43,8 +43,8 @@
 }
 
 .cardsBlock {
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 80px;
 
   .container {
     @include flex-column-centered();
@@ -60,5 +60,10 @@
     @media (min-width: $middle) {
       @include flex-space();
     }
+  }
+
+  @media (min-width: $middle) {
+    padding-top: 100px;
+    padding-bottom: 200px;
   }
 }
